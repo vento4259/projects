@@ -59,19 +59,19 @@ body
 }
 
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
+	.container {
+		width: 750px;
+	}
 }
 @media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
+	.container {
+		width: 970px;
+	}
 }
 @media (min-width: 1200px) {
-  .container {
-     width: 970px !important;
-  }
+	.container {
+		width: 970px !important;
+	}
 }
 .header
 {
@@ -709,7 +709,7 @@ html[xmlns] #menu-bar {
 	}
 	.more-info
 	{
-		width: 320px;
+		max-width: 320px;
 		float: left;
 		font-family: @myraid-font;
 		a 
@@ -719,8 +719,8 @@ html[xmlns] #menu-bar {
 	}
 	.nav-links
 	{
-		width: 380px;
-		float: left;
+		max-width: 360px;
+		float: right;
 		margin-left: 20px;
 		a 
 		{
@@ -738,5 +738,100 @@ html[xmlns] #menu-bar {
 			}
 			
 		}
+	}
+}
+
+
+@media (max-width: 1005px)
+{
+	.row
+	{
+		margin: 0;
+	}
+	.left-form
+	{
+		padding: 10px !important;
+		padding-right: 25px !important;		
+		label 
+		{
+			font-size: 12px !important;
+		}
+		.alert-block
+		{
+			font-size: 10px;
+			margin-bottom: 5px !important;
+		}
+	}
+	.no-pad-left
+	{
+		padding-right: 0;
+	}
+	.container
+	{
+		margin:0;
+		padding: 0;
+		width: 100%;
+	}
+	.carousel-caption
+	{
+		
+		padding:0px 80px !important;
+		h2 
+		{			
+			font-size: 24px !important; 				
+		}
+		h3
+		{			
+			font-size: 16px !important;
+		}
+	}
+	.banner .left-form .register
+	{
+		margin-top: 5px;
+	}
+	.header p
+	{
+		font-size: 12px;
+	}
+}
+
+
+
+
+
+.toggle-btn
+{
+	display: none;
+}
+/*Responsive Styles*/
+
+@media screen and (max-width : 768px){
+	#menu-bar
+	{
+		display: block;		
+		ul {
+			position: static;
+			display: none;	
+			width: 100%;
+		}
+		a 
+		{
+			width: 100%;
+			display: block;
+		}
+		
+		li {
+			
+			text-align: center !important;
+		}
+		/*Make all menu links full width*/
+		li, li a {
+			display: block;	
+			width: 100% !important;
+		}					
+	}	
+	.toggle-btn
+	{
+		display: block;
 	}
 }
