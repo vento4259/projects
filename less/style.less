@@ -347,8 +347,7 @@ html[xmlns] #menu-bar {
 	border: 3px solid @primary-color;
 	.left-form
 	{
-		padding:10px 30px;
-		border-right: 3px solid @primary-color;
+		padding:10px 30px;		
 		font-family: @myraid-font;
 		label
 		{
@@ -434,6 +433,7 @@ html[xmlns] #menu-bar {
 	.slider
 	{
 		height: 376px;
+		border-left: 3px solid @primary-color;
 		.carousel-inner,.item
 		{
 			height: 376px;
@@ -803,12 +803,19 @@ html[xmlns] #menu-bar {
 {
 	display: none;
 }
+.nopad
+{
+	padding: 0px !important;
+}
+	
+
 /*Responsive Styles*/
 
 @media screen and (max-width : 768px){
 	#menu-bar
 	{
-		display: block;		
+
+		display: block;						
 		ul {
 			position: static;
 			display: none;	
@@ -828,10 +835,38 @@ html[xmlns] #menu-bar {
 		li, li a {
 			display: block;	
 			width: 100% !important;
+			color: #FFFFFF !important;
 		}					
+	}
+	.banner
+	{
+		margin-top: 20px !important;	
+		.slider
+		{
+			border-left: 0;
+			border-top: 2px solid @primary-color;
+		}	
+	}
+	.menu-parent,#menu-bar a
+	{
+		background-color: #000000 !important;
+	}
+	.organization h3
+	{
+		font-size: 13px;
 	}	
 	.toggle-btn
 	{
 		display: block;
+		border:2px solid @primary-color;
+		background-color: #000000;
+		color: #FFFFFF;
 	}
+	.header p
+	{
+		font-size: 12px;
+		padding: 0px 50px;
+		margin-top: -30px;
+	}
+
 }

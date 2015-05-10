@@ -46,7 +46,7 @@
               </div>
             </div>
             <!-- header -->            
-            <div class="hidden-sm visible-xs visible-md visible-lg col-xs-12">
+            <div class="hidden-sm visible-xs visible-md visible-lg col-xs-12 nopad">
               <button class="toggle-btn">menu</button>
               <div class="menu-parent">
                 <ul id="menu-bar" class="">              
@@ -366,9 +366,21 @@
             <script src="js/bootstrap.min.js"></script>
 
             <script>
-              $('.toggle-btn').click(function(){
-                $(this).next().slideToggle()
-              });            
+
+              $(document).ready(function() {
+                var par = $('.menu-parent');
+                $(par).hide();
+
+                $('.toggle-btn').click(function(e) {
+                  $(par).slideToggle('slow');
+                  e.preventDefault();
+                });
+              });
+
+
+              // $('.toggle-btn').click(function(){
+              //   $(this).next().slideToggle()
+              // });            
             </script>
           </body>
           </html>

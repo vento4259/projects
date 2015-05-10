@@ -340,7 +340,6 @@ html[xmlns] #menu-bar {
 }
 .banner .left-form {
   padding: 10px 30px;
-  border-right: 3px solid #9bec45;
   font-family: 'MyraidBold', sans-serif;
 }
 .banner .left-form label {
@@ -411,6 +410,7 @@ html[xmlns] #menu-bar {
 }
 .banner .slider {
   height: 376px;
+  border-left: 3px solid #9bec45;
 }
 .banner .slider .carousel-inner,
 .banner .slider .item {
@@ -700,6 +700,9 @@ html[xmlns] #menu-bar {
 .toggle-btn {
   display: none;
 }
+.nopad {
+  padding: 0px !important;
+}
 /*Responsive Styles*/
 @media screen and (max-width: 768px) {
   #menu-bar {
@@ -722,8 +725,31 @@ html[xmlns] #menu-bar {
   #menu-bar li a {
     display: block;
     width: 100% !important;
+    color: #FFFFFF !important;
+  }
+  .banner {
+    margin-top: 20px !important;
+  }
+  .banner .slider {
+    border-left: 0;
+    border-top: 2px solid #9bec45;
+  }
+  .menu-parent,
+  #menu-bar a {
+    background-color: #000000 !important;
+  }
+  .organization h3 {
+    font-size: 13px;
   }
   .toggle-btn {
     display: block;
+    border: 2px solid #9bec45;
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+  .header p {
+    font-size: 12px;
+    padding: 0px 50px;
+    margin-top: -30px;
   }
 }
