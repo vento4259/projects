@@ -369,7 +369,7 @@
 
               $(document).ready(function() {
                 var par = $('.menu-parent');
-                $(par).hide();
+                $(par).toggleClass('me');
 
                 $('.toggle-btn').click(function(e) {
                   $(par).slideToggle('slow');
@@ -378,9 +378,10 @@
               });
 
 
+
               // $('.toggle-btn').click(function(){
               //   $(this).next().slideToggle()
               // });            
-            </script>
-          </body>
-          </html>
+</script>
+</body>
+</html>
