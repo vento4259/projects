@@ -1,0 +1,209 @@
+
+
+/*===============================================
+  html and body
+  ================================================= */
+
+  @charset "UTF-8";
+  @import 'bootstrap.css';
+  @import 'sidebar.less';
+  @import 'material-design-iconic-font.min.css';
+  @import 'ripple.less';
+
+/*===============================================
+  File structure:
+  1)html
+  2)body styles
+================================================= */
+
+
+
+
+/*===============================================
+  1) html and body
+================================================= */
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	overflow-x: hidden;
+}
+.dreamz-holder
+{
+	background-color: red;
+	position: relative;
+	min-height: 100%;
+	background: @body-bg;
+	min-height: 4000px;	
+	&.menu-fixed
+	{
+		.menu-sidebar
+		{
+			position: fixed;
+		}		
+	}
+	&.menu-right
+	{
+		.menu-sidebar
+		{
+			left: auto;
+			right: 0;
+		}
+		.main-holder
+		{
+			margin-left: 0;
+			margin-right: @sidebar-width;
+		}		
+	}
+	&.menu-collapsed
+	{
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		brand
+		{
+			img.logo
+			{
+				display: none;
+			}
+			span 
+			{
+				display: inline-block;
+			}
+		}
+		.menu-sidebar
+		{
+			width: @minibar-width;					
+		}
+		.main-holder
+		{
+			margin-left: @minibar-width;
+		}
+		&.menu-right
+		{
+			.main-holder
+			{
+				margin-left: 0;	
+				margin-right: @minibar-width;				
+			}
+		}			
+	}
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+	.dreamz-holder.mini-screen
+	{
+		.menu-sidebar
+		{
+			width: @minibar-width;
+			margin-left: -@minibar-width;
+			brand
+			{
+				img.logo
+				{
+					display: none;
+				}
+				span 
+				{
+					display: inline-block;
+				}
+			}
+
+		}		
+		.main-holder
+		{
+			margin-left: 0;
+		}
+		&.menu-collapsed
+		{
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			transition: all 0.5s ease;					
+			.menu-sidebar
+			{
+				width: @minibar-width;
+				margin-left: 0;					
+			}
+			.main-holder
+			{
+				margin-left: @minibar-width;
+			}
+			&.menu-right
+			{			
+				.menu-sidebar
+				{
+					margin-right: 0px ;								
+				}
+				.main-holder
+				{
+					margin-right: @minibar-width;
+				}
+			}			
+		}
+		&.menu-right
+		{			
+			.menu-sidebar
+			{
+				margin-right: -@minibar-width;								
+				margin-left: 0 ;
+				overflow-x: hidden;								
+			}
+			.main-holder
+			{
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}			
+	}
+}
+
+/*===============================================
+  2) Body styles
+================================================= */
+
+.main-holder
+{
+	margin-left: @sidebar-width;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;	
+}
+.menu-ontop
+{
+	.main-holder
+	{
+		margin-left: 0;
+	}	
+}
+
+
+
+/*===============================================
+  2) global styles
+================================================= */
+
+.red
+{
+
+}
+.blue
+{
+
+}
+.green
+{
+
+}
+.orange
+{
+
+}
+.yellow
+{
+
+}
