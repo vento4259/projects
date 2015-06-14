@@ -43,6 +43,8 @@ html, body {
 		.menu-sidebar
 		{
 			position: fixed;
+			/*overflow-y: scroll;*/
+    		height: 100%;
 		}		
 	}
 	&.menu-right
@@ -206,4 +208,66 @@ html, body {
 .yellow
 {
 
+}
+
+.badge
+{
+	&.primary
+	{
+		background-color: @primary-color;
+	}
+}
+
+.material-icon {
+	width: 70px;
+	height: 70px;
+	margin: 55px;
+	position: relative;
+	background: red;
+}
+ 
+.material-icon span,
+.material-icon {
+	transition: all 500ms ease;
+}
+ 
+.material-icon span {
+	background-color: red;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.hamburger span {
+	height: 10px;
+	-webkit-transform: translateY(29px);
+}
+ 
+.hamburger .second {
+	-webkit-transform: translateY(0);
+}
+ 
+.hamburger .third{
+	-webkit-transform: translateY(60px);
+}
+/* This part is added to the hamburger css so they have the same height and positioning. */
+.hamburger span, .arrow span {
+	height: 10px;
+	-webkit-transform: translateY(29px);
+}
+ 
+/* I also need to move it back a bit to keep it centered. */
+.arrow {
+	-webkit-transform: rotate(180deg) translateX(-3px);
+}
+ 
+.arrow .second,
+.arrow .third {
+	-webkit-transform: rotate(-45deg) translateY(56px);
+	width: 40px;
+}
+ 
+.arrow .second {
+	-webkit-transform: rotate(45deg) translateY(-15px) translateX(40px);
 }

@@ -26,10 +26,11 @@
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
   font-family: 'Roboto', sans-serif;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .menu-sidebar .logo-dz {
-  background-color: #9c27b0;
-  height: 60px;
+  background-color: #0288d1;
+  height: 50px;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.156863) 0px 2px 5px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 10px 0px;
   z-index: 9;
@@ -37,7 +38,7 @@
 }
 .menu-sidebar .logo-dz brand {
   margin: 0;
-  line-height: 60px;
+  line-height: 50px;
   padding: 0px 18px;
   font-size: 20px;
 }
@@ -51,38 +52,39 @@
   font-weight: 700;
 }
 .menu-sidebar .logo-dz .menu-btn {
-  font-size: 25px;
-  padding: 0px 18px;
-  line-height: 60px;
-  color: #FFFFFF;
-  z-index: 1;
-  cursor: pointer;
+  /*font-size: 25px;
+			padding: 0px 18px;
+			line-height: @topbar-height;
+			color: #FFFFFF;
+			z-index: 1;
+			cursor: pointer;*/
 }
 .menu-sidebar .user-block {
   min-height: 90px;
-  background: url(../images/avatarbg.jpg);
+  background: url(../images/avatarbg2.jpg);
   position: relative;
   z-index: 1;
   text-align: center;
 }
 .menu-sidebar .user-block img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 30px;
   left: 0;
   right: 0;
   margin: 0 auto;
   margin-top: 20px;
+  border: 4px solid #FFFFFF;
 }
 .menu-sidebar .user-block .name {
   font-size: 15px;
-  color: #FFFFFF;
+  color: #212121;
   padding-top: 5px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .menu-sidebar .user-block .role {
   font-size: 12px;
-  color: #FFFFFF;
+  color: #727272;
   font-weight: 400;
   padding-bottom: 10px;
 }
@@ -90,7 +92,7 @@
   width: 40px;
   height: 40px;
   line-height: 40px;
-  background-color: #e040fb;
+  background-color: #03a9f4;
   color: #333;
   position: absolute;
   bottom: -20px;
@@ -99,6 +101,36 @@
   font-size: 16px;
   color: #FFFFFF;
   text-align: center;
+}
+.menu-sidebar .menu-wrapper {
+  list-style: none;
+  padding: 30px 0px;
+}
+.menu-sidebar .menu-wrapper > li {
+  line-height: 40px;
+  position: relative;
+}
+.menu-sidebar .menu-wrapper > li > a {
+  text-decoration: none;
+  color: #727272;
+  font-size: 14px;
+  display: block;
+  padding-left: 20px;
+  transition: all 0.2s ease;
+}
+.menu-sidebar .menu-wrapper > li > a:hover {
+  background-color: #0288d1;
+  color: #FFFFFF;
+}
+.menu-sidebar .menu-wrapper > li > a:hover i.icon {
+  color: #FFFFFF;
+}
+.menu-sidebar .menu-wrapper > li > a i.icon {
+  color: #B6B6B6;
+  font-size: 16px;
+  position: absolute;
+  right: 25px;
+  top: 10px;
 }
 .ripplelink {
   text-decoration: none;
@@ -186,6 +218,8 @@ body {
 }
 .dreamz-holder.menu-fixed .menu-sidebar {
   position: fixed;
+  /*overflow-y: scroll;*/
+  height: 100%;
 }
 .dreamz-holder.menu-right .menu-sidebar {
   left: auto;
@@ -274,3 +308,53 @@ body {
 /*===============================================
   2) global styles
 ================================================= */
+.badge.primary {
+  background-color: #0288d1;
+}
+.material-icon {
+  width: 70px;
+  height: 70px;
+  margin: 55px;
+  position: relative;
+  background: red;
+}
+.material-icon span,
+.material-icon {
+  transition: all 500ms ease;
+}
+.material-icon span {
+  background-color: red;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.hamburger span {
+  height: 10px;
+  -webkit-transform: translateY(29px);
+}
+.hamburger .second {
+  -webkit-transform: translateY(0);
+}
+.hamburger .third {
+  -webkit-transform: translateY(60px);
+}
+/* This part is added to the hamburger css so they have the same height and positioning. */
+.hamburger span,
+.arrow span {
+  height: 10px;
+  -webkit-transform: translateY(29px);
+}
+/* I also need to move it back a bit to keep it centered. */
+.arrow {
+  -webkit-transform: rotate(180deg) translateX(-3px);
+}
+.arrow .second,
+.arrow .third {
+  -webkit-transform: rotate(-45deg) translateY(56px);
+  width: 40px;
+}
+.arrow .second {
+  -webkit-transform: rotate(45deg) translateY(-15px) translateX(40px);
+}

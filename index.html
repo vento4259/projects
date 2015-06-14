@@ -17,7 +17,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
     </head>
-    <body class="dreamz-holder">
+    <body class="dreamz-holder menu-fixed">
       <div class="menu-sidebar">
         <div class="logo-dz">
           <brand><img src="assets/images/logo.png" class="logo" alt="logo"><span>D</span></brand>          
@@ -28,7 +28,7 @@
           <div class="name">Rita ora</div>
           <div class="role">Web developer</div>
           <a class="edit ripplelink lightgreen" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            <i class="md-add"></i>
+            <i class="md-mode-edit"></i>
           </a>
         </div>
         <!-- user-block -->
@@ -38,6 +38,22 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis, maiores beatae eum! Pariatur ipsam aut repellat, asperiores dolores. Natus neque facilis aliquid voluptatibus voluptate cum nobis reiciendis officiis adipisci?
           </div>
         </div>
+        <!-- collapse -->
+
+        <ul class="menu-wrapper">
+          <li><a href="#"> <i class="md-home icon"></i> Dashboards</a></li>
+          <li><a href="#"> <i class="md-home icon"></i> Layouts <span class="primary badge">2</span></a></li>
+          <li><a href="#"> <i class="md-home icon"></i> Mailbox</a></li>
+          <li><a href="#"> <i class="md-home icon"></i> Widgets</a></li>
+          <li><a href="#"> <i class="md-home icon"></i> Forms</a></li>
+          <li><a href="#"> <i class="md-home icon"></i> Graphs</a></li>
+          <li><a href="#"> <i class="md-home icon"></i> UI elements</a></li>
+          <li><a href="#"> <i class="md-home icon"></i> Tables</a></li>
+          <li><a href="#"> <i class="md-home icon"></i> Gallery</a></li>
+          <li><a href="#"> <i class="md-home icon"></i> Extra pages</a></li>
+          <li><a href="#"> <i class="md-home icon"></i> Bonus</a></li>
+        </ul>
+        <!-- menu-wrapper -->
       </div>
       <!-- menu-sidebar -->
       <div class="main-holder">        
@@ -51,7 +67,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="menu-btn" href="#"><i class="md-menu"></i></a>
+              <a class="menu-btn" href="#">
+              <i class="md-menu"></i> 
+              <div class="material-icon">
+  <span class="first"></span>
+  <span class="second"></span>
+  <span class="third"></span>
+</div>
+              </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -108,12 +131,16 @@
       <script src="assets/js/jquery-1.11.3.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/jquery.slimscroll.min.js"></script>
       <script src="assets/js/core.js"></script>
       <script>
         $( document ).ready(function() {
           $('.menu-btn').click(function(){
             $('.dreamz-holder').toggleClass('menu-collapsed')
           });
+          // $('.menu-sidebar').slimscroll({
+          //   size: '5px'
+          // });
           $(window).resize(function(){
             var current_width = $(window).width();
             if(current_width < 768){
