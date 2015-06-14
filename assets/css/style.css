@@ -1,0 +1,145 @@
+@import 'font-awesome.min.css';
+.btn {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: #386089;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #386089 0%, #34597f 54%, #32517a 60%, #274660 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #386089), color-stop(54%, #34597f), color-stop(60%, #32517a), color-stop(100%, #274660));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #386089 0%, #34597f 54%, #32517a 60%, #274660 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #386089 0%, #34597f 54%, #32517a 60%, #274660 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #386089 0%, #34597f 54%, #32517a 60%, #274660 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #386089 0%, #34597f 54%, #32517a 60%, #274660 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#386089', endColorstr='#274660', GradientType=0);
+  /* IE6-9 */
+  color: #FFFFFF !important;
+  border: 1px solid #355d85 !important;
+  height: 50px !important;
+  line-height: 50px !important;
+}
+button.ui-btn,
+.ui-controlgroup-controls button.ui-btn-icon-notext {
+  max-width: 120px !important;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.remote {
+  height: 800px;
+  max-width: 460px;
+  background-color: #355d85;
+}
+.remote .header {
+  min-height: 60px;
+  background-color: #FFFFFF;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+}
+.remote .header .left-img {
+  float: left;
+  width: 130px;
+}
+.remote .header .right-img {
+  float: right;
+  width: 88px;
+}
+.remote .remote-body {
+  padding: 25px;
+}
+.remote .remote-body .controls {
+  margin: 20px 0px;
+  text-align: center;
+}
+.remote .remote-body .controls a {
+  color: #FFFFFF;
+}
+.remote .remote-body .controls .volume,
+.remote .remote-body .controls .channel {
+  height: 170px;
+  width: 50px;
+  float: left;
+  background-color: #3b638d;
+  border-radius: 30px;
+  color: #FFFFFF;
+  border: 1px solid #8fadce;
+  position: relative;
+  text-align: center;
+  line-height: 170px;
+}
+.remote .remote-body .controls .volume .fa,
+.remote .remote-body .controls .channel .fa {
+  left: 0;
+  right: 0;
+}
+.remote .remote-body .controls .volume .fa-plus,
+.remote .remote-body .controls .channel .fa-plus {
+  position: absolute;
+  top: 10px;
+}
+.remote .remote-body .controls .volume .fa-minus,
+.remote .remote-body .controls .channel .fa-minus {
+  position: absolute;
+  bottom: 10px;
+}
+.remote .remote-body .controls .channel {
+  float: right !important;
+}
+.remote .remote-body .clear {
+  clear: both;
+}
+.remote .remote-body .navigate {
+  width: 170px;
+  border-radius: 50%;
+  height: 170px;
+  border: 1px solid #8fadce;
+  display: inline-block;
+  position: relative;
+}
+.remote .remote-body .navigate a {
+  position: absolute;
+}
+.remote .remote-body .navigate a.top {
+  top: 10px;
+  left: 0;
+  right: 0;
+}
+.remote .remote-body .navigate a.left {
+  left: 10px;
+  line-height: 170px;
+}
+.remote .remote-body .navigate a.right {
+  right: 10px;
+  line-height: 170px;
+}
+.remote .remote-body .navigate a.bottom {
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
