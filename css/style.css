@@ -48,6 +48,7 @@
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 body {
   background: url('../images/bg.jpg');
@@ -321,6 +322,9 @@ header .header-content .verified {
   text-align: left;
   line-height: 25px;
 }
+.serum .hair img {
+  width: 100%;
+}
 .serum .sub-heading {
   font-family: 'ralewaymedium', sans-serif;
   color: #b60094;
@@ -471,6 +475,7 @@ header .header-content .verified {
   padding: 0;
   padding-bottom: 100px;
   min-height: 400px;
+  margin-bottom: 50px;
 }
 .bottom-info .girl {
   position: absolute;
@@ -514,6 +519,13 @@ header .header-content .verified {
 .bottom-info .holder p {
   font-family: 'helveticaregular', sans-serif;
   font-size: 22px;
+}
+.footer .navigate a {
+  padding: 0px 10px;
+  color: #000000;
+  font-family: 'ralewaysemibold', sans-serif;
+  border-right: 1px solid #000000;
+  font-size: 13px;
 }
 /*media screen*/
 @media screen and (max-width: 760px) {

@@ -72,6 +72,7 @@
 html,body
 {
 	height: 100%;	
+	overflow-x: hidden;
 }
 
 body
@@ -401,6 +402,13 @@ header
 		text-align: left;
 		line-height: 25px;		
 	}
+	.hair
+	{
+		img 
+		{
+			width: 100%;		
+		}		
+	}
 	.sub-heading 
 	{
 		font-family: @ralewaymedium;
@@ -587,6 +595,7 @@ header
 	padding: 0;
 	padding-bottom: 100px;
 	min-height: 400px;
+	margin-bottom: 50px;
 	.girl 
 	{
 		position: absolute;
@@ -638,8 +647,19 @@ header
 			font-size: 22px;
 		}
 	}
-
 }
+.footer
+{
+	.navigate a 
+	{
+		padding: 0px 10px;
+		color: #000000;
+		font-family: @ralewaysemibold;
+		border-right: 1px solid #000000;
+		font-size: 13px;
+	}
+}
+
 /*media screen*/
 @media screen and (max-width: 760px) {
 	.header-content
