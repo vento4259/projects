@@ -15,9 +15,11 @@
     }
   </style>
   <![endif]-->  
-  <link href="css/bootstrap.css" rel="stylesheet">  
-  <link href="css/style.css" rel="stylesheet">  
-
+  <!-- <link rel="stylesheet" href="css/prelude.css"> -->
+  <!-- <link rel="stylesheet" href="css/rainbow.css"> -->
+  <link rel="stylesheet" href="css/progress.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">  
+  <link href="css/style.min.css" rel="stylesheet">    
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,6 +31,13 @@
 
 
     <body>
+
+      <div class="overlay"></div>
+      <div class="pie_progress pie_progress--slow" role="progressbar" data-goal="1000">
+        <div class="pie_progress__number">0%</div>
+        <div class="pie_progress__label">Loaded</div>
+      </div>
+      
       <header>
         <div class="container header-content">    
           <div class="left-part">
@@ -277,6 +286,30 @@
 
       </div>
       <!-- footer -->
+      
+      <script src="js/jquery-1.11.2.min.js"></script>      
+      <script src="js/asPieProgress.js"></script>
+      <script type="text/javascript">
+        $(window).load(function() {          
+        // Example with grater loading time - loads longer
 
+        
+      });
+
+        $( document ).ready(function() {
+          $('.pie_progress--slow').asPieProgress({
+            namespace: 'pie_progress',
+            goal: 1000,
+            min: 0,
+            max: 1000,
+            speed: 100,
+            easing: 'linear'
+          });        
+          $('.pie_progress').asPieProgress('start');         
+         $('.pie_progress--slow,.overlay').removeClass("hidden").delay(10000).queue(function(next){
+          $(this).addClass('hidden');
+        });
+       });
+      </script>
     </body>
     </html>
