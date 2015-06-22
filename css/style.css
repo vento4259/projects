@@ -1,3 +1,5 @@
+@import 'progress.css';
+@import 'bootstrap.min.css';
 @font-face {
   font-family: 'ralewayregular';
   src: url('../fonts/Raleway-Regular.ttf') format('truetype');
@@ -544,6 +546,9 @@ header .header-content .verified {
   margin-top: 150px;
   z-index: 999999999;
   font-family: 'helveticaregular', sans-serif;
+}
+.pie_progress__svg path {
+  stroke: #bf35a6 !important;
 }
 @media all and (max-width: 768px) {
   .pie_progress {
